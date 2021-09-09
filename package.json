@@ -1,6 +1,6 @@
 {
   "name": "my-node-ejs-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "bin": {
     "node-ejs": "./bin/cli.js"
@@ -9,9 +9,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "files": [
+    "bin",
+    "lib",
+    "default-config",
+    "i18n",
+    "layui",
+    "templates",
+    "cli-config.json",
+    "cnzz"
+  ],
   "author": {
     "name": "zhangyanrong",
-    "email": "zyr9527@qq.com"
+    "email": "479496771@qq.com"
   },
   "license": "MIT",
   "dependencies": {
