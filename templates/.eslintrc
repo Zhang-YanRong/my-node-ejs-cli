@@ -1,0 +1,62 @@
+{
+  "env":{
+      "es6":true,
+      "node":true
+  },
+  "extends":"eslint:recommended",
+  "parserOptions":{
+      "sourceType":"script"
+  },
+  "parser": "babel-eslint",
+  "rules":{
+    "no-case-declarations": "off", // 该规则旨在避免访问未经初始化的词法绑定以及跨 case 语句访问被提升的函数。
+    "handle-callback-err": ["error", "error"], // 关闭强制回调错误处理
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": true }], // 在大括号内强制保持一致的间距
+    "arrow-parens": 0, // 箭头函数参数不需要括号
+    "no-extra-semi": 0, // 禁止不必要的分号
+    "semi": ["error", "never"],
+    "generator-star-spacing": "off", // 在生成器函数中在 * 周围不强制间距
+    "no-debugger": "error", // 不允许使用debugger
+    "eol-last": 0, // 要求或禁止在文件末尾换行
+    "space-before-function-paren": ["error", { "anonymous": "never", "named": "always" }], // 要求或禁止在函数括号前有空格
+    "eqeqeq": 0, // 可以不使用全等
+    "one-var": 0, // 不强制变量在函数中一起或单独声明
+    "no-empty": 0, // 禁止空块语句
+    "spaced-comment": 0, // 要求或禁止以空格（空格或制表符）开始评论
+    "no-unused-vars": 0, // 禁止使用var
+    "keyword-spacing": ["error", { "after": true }], // 关键字后要有空格
+    "quotes": [1, "single"], // 优先使用单引号
+    "comma-dangle": 0, // 禁止尾随逗号
+    "key-spacing": [1, {  // 对象字面量中冒号的前后空格
+      "beforeColon": false,
+      "afterColon": true
+    }],
+    "no-redeclare": [2, {   // 禁止重复声明变量
+      "builtinGlobals": true
+    }],
+    "indent": ["error", 2] // 缩进等于两个空格
+  },
+  "globals": {
+    "$": true,
+    "jquery": true,
+    "jQuery": true,
+    "localStorage": true,
+    "sessionStorage": true,
+    "navigator": true,
+    "window": true,
+    "document": true,
+    "layui": true,
+    "location": true,
+    "GStarSDK": true,
+    "XMLHttpRequest": true,
+    "ActiveXObject": true,
+    "layer": true,
+    "define": true,
+    "TwoCoInlineCart": true,
+    "encryptDes": true,
+    "CryptoJS": true,
+    "_czc": true,
+    "gtag": true,
+    "Image": true
+  }
+}

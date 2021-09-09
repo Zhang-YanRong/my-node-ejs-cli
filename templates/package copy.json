@@ -1,0 +1,54 @@
+{
+  "name": "project-html-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:prod-zh": "cross-env NODE_ENV=development process.env.TYPE=prod process.env.LANG=zh process.env.OSS_BASE='https://resource-cn.gstarcad.com/nnweb' gulp dev",
+    "dev:dev-zh": "cross-env NODE_ENV=development process.env.TYPE=dev process.env.LANG=zh process.env.OSS_BASE='' gulp dev",
+    "dev:test-zh": "cross-env NODE_ENV=development process.env.TYPE=test process.env.LANG=zh process.env.OSS_BASE='' gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "build:dev-zh": "cross-env NODE_ENV=production process.env.TYPE=dev process.env.LANG=zh process.env.OSS_BASE='https://ks3-test-cn.51ake.com/node-help/dev-cn' gulp build",
+    "build:test-zh": "cross-env NODE_ENV=production process.env.TYPE=test process.env.LANG=zh process.env.OSS_BASE='https://ks3-test-cn.51ake.com/node-help/test-cn' gulp build",
+    "build:prod-zh": "cross-env NODE_ENV=production process.env.TYPE=prod process.env.LANG=zh process.env.OSS_BASE='https://resource-cn.gstarcad.com/nnweb' gulp build",
+    "minify": "cross-env NODE_ENV=production minify=true gulp minifyImg",
+    "svgo": "svgo -f src/assets/icons/origin --config=src/assets/icons/svgo.yml -o src/assets/icons/output",
+    "lint-fix": "eslint src/assets/**/*.js  --fix",
+    "lint-file": "ls-lint",
+    "pm2": "cross-env pm2 delete node-help-zh",
+    "pm2-dev-zh": "cross-env NODE_ENV=production process.env.TYPE=dev process.env.LANG=zh process.env.PORT=7020 process.env.OSS_BASE='https://ks3-test-cn.51ake.com/node-help/dev-cn' pm2 start server.js --name node-help-zh --watch --fresh",
+    "pm2-prod-zh": "cross-env NODE_ENV=production process.env.TYPE=prod process.env.LANG=zh process.env.PORT=7011 process.env.OSS_BASE='https://resource-cn.gstarcad.com/nnweb' pm2 start server.js --name node-help-zh --watch --fresh",
+    "pm2-test-zh": "cross-env NODE_ENV=production process.env.TYPE=test process.env.LANG=zh process.env.PORT=7011 process.env.OSS_BASE='https://ks3-test-cn.51ake.com/node-help/test-cn' pm2 start server.js --name node-help-zh --watch --fresh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-babel": "^8.0.0",
+    "gulp-change": "^1.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
+    "gulp-html-i18n": "^0.16.0",
+    "gulp-if": "^3.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-load-plugins": "^2.0.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "create-error": "^0.3.1",
+    "node-newweb": "^1.0.1",
+    "qs": "^6.10.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint src/assets/**/*.js",
+      "pre-push": "npm run lint-file"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+ls:
+    .dir: kebab-case
+    .js: snake_case
+    .ejs: snake_case
+    .less: snake_case
+    .css: snake_case
+
+ignore: 
+    - .git 
+    - node_modules
+    - dist
+    - src/static

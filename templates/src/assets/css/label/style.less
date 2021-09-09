@@ -1,0 +1,69 @@
+.label {
+  padding-top: 24px;
+  height: @ContentMaxHeight;
+  width: @AsideMaxWidht;
+  display: block;
+  color: #272a2f;
+  line-height: @ContentMaxHeight;
+  font-size: 14px;
+  line-height: 14px;
+  overflow-y: scroll;
+  // float: left;
+  box-sizing: border-box;
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  position: relative;
+  flex: none
+  ;
+  z-index: 2;
+  padding-left: 15px;
+
+  &-item {
+    li {
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    li:hover {
+      color: #285EFF;
+    }
+
+    span {
+      float: right;
+      margin-right: 5px;
+    }
+  }
+}
+
+.hover {
+  color: #285eff!important;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .label {
+    padding-top: 16px;
+    width: @AsideMinWidht;
+    height: @ContentMinHeight;
+
+    &-item {
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

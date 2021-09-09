@@ -1,0 +1,4 @@
+{
+  "replaceCNZZ": "const cnzz = require('./common/cnzz')",
+  "replaceUseCnzz": "cnzz: cnzz"
+}

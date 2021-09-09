@@ -1,0 +1,23 @@
+  
+<!DOCTYPE html>
+<html>
+  <head>
+		<%- include("../../components/meta/index.ejs") -%>
+  </head>
+  <body class="theme-default">
+    <div class="content">
+      <div class="content-text">
+        <p><%= pageData.msg %></p>
+        <!-- {replaceLayuiDom} -->
+      </div>
+    </div>
+
+    <!-- 公共底部 -->
+    <%- include("../../components/footer.ejs") -%>
+
+    <script src='BASE_URL/assets/js/home/home.js?<%= time %>'></script>
+
+    <!-- {replaceHomeCNZZ} -->
+  </body>
+
+</html>

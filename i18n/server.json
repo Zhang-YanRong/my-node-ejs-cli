@@ -1,0 +1,4 @@
+{
+  "replaceI18n": "const i18n = require('./admin/untils/i18n')",
+  "replaceSetI18n": "/**i18n */ \n    app.use(i18n.setI18n()) \n    app.use(i18n.setLang)"
+}

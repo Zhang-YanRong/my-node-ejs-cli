@@ -1,0 +1,44 @@
+.blank {
+  &-content {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  &-img {
+    height: 226px;
+    width: 261px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-msg {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #282b30;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .blank {
+    &-img {
+      height: 149px;
+      width: 172px;
+    }
+  
+    &-msg {
+      width: 100%;
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 26px;
+    }
+  }
+  
+}

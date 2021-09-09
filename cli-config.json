@@ -1,0 +1,90 @@
+{
+  "i18n": [
+    {
+      "path": "admin/untils/i18n.js",
+      "filePath": "i18n/i18n.js"
+    },
+    {
+      "path": "admin/controller/web_page.js",
+      "filePath": "i18n/web_page.json"
+    },
+    {
+      "path": "server.js",
+      "filePath": "i18n/server.json"
+    },
+    {
+      "path": "lang",
+      "filePath": "i18n/lang"
+    }
+  ], 
+  "default-config": [
+    {
+      "path": "admin/controller/web_page.js",
+      "filePath": "default-config/web_page.json"
+    },
+    {
+      "path": "server.js",
+      "filePath": "default-config/server.json"
+    },
+    {
+      "path": "src/components/common.ejs",
+      "filePath": "default-config/common.json"
+    },
+    {
+      "path": "src/views/home/page.ejs",
+      "filePath": "default-config/home.json"
+    },
+    {
+      "path": "src/assets/js/home/home.js",
+      "filePath": "default-config/homejs.json"
+    },
+    {
+      "path": "src/components/meta/index.ejs",
+      "filePath": "default-config/meta.json"
+    }
+  ],
+  "cnzz": [
+    {
+      "path": "admin/controller/common/cnzz.js",
+      "filePath": "cnzz/cnzz.js"
+    },
+    {
+      "path": "admin/controller/web_page.js",
+      "filePath": "cnzz/web_page.json"
+    },
+    {
+      "path": "src/components/cnzz.ejs",
+      "filePath": "cnzz/cnzz.ejs"
+    },
+    {
+      "path": "src/views/home/page.ejs",
+      "filePath": "cnzz/home.json"
+    },
+    {
+      "path": "src/assets/js/cnzz/page_cnzz.js",
+      "filePath": "cnzz/page_cnzz.js"
+    }
+  ],
+  "layui": [
+    {
+      "path": "src/assets/js/home/home.js",
+      "filePath": "layui/homejs.json"
+    },
+    {
+      "path": "src/static/layui",
+      "filePath": "layui/layui"
+    },
+    {
+      "path": "src/components/common.ejs",
+      "filePath": "layui/common.json"
+    },
+    {
+      "path": "src/views/home/page.ejs",
+      "filePath": "layui/home.json"
+    },
+    {
+      "path": "src/components/meta/index.ejs",
+      "filePath": "layui/meta.json"
+    }
+  ]
+}

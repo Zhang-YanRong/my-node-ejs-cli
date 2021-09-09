@@ -1,0 +1,104 @@
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #ccc;
+  vertical-align: middle;
+
+  img {
+    margin-right: 10px;
+    height: 26px;
+    width: auto;
+  }
+
+  a {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    line-height: 69px;
+    margin-left: 23px;
+    text-decoration: none;
+  }
+}
+
+.content {
+  width: 793px;
+  height: 558px;
+  background: url("BASE_URL/assets/img/pc404.png") no-repeat center;
+  margin: 90px auto;
+  position: relative;
+
+  a {
+    display: inline-block;
+    width: 154px;
+    height: 51px;
+    line-height: 51px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 5%;
+  }
+
+  a:nth-of-type(1) {
+    background-color: #2cb032;
+    left: 22%;
+  }
+
+  a:nth-of-type(2) {
+    background-color: #2265b5;
+    left: 47%;
+  }
+}
+
+.body {
+  min-height: calc(100vh - 50px);
+}
+
+@media screen and (max-width: 793px) {
+  .content {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .header {
+
+    img {
+      height: 20px;
+    }
+
+    a {
+      font-size: 12px;
+      margin-left: 3px;
+    }
+  }
+
+  .content {
+    background-size: 400px;
+    background-position: center 0;
+    position: relative;
+    height: 290px;
+    margin-top: 30px;
+
+    a {
+      width: 132px;
+      height: 40px;
+      line-height: 40px;
+      bottom: 0;
+    }
+
+    a:nth-of-type(1) {
+      left: 13%;
+    }
+
+    a:nth-of-type(2) {
+      left: 53%;
+    }
+  }
+
+  .body {
+    min-height: calc(100vh - 60px);
+  }
+}

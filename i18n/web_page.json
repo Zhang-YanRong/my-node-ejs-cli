@@ -1,0 +1,5 @@
+{
+  "replaceI18n": "const i18n = require('i18n')",
+  "replaceI18nHome": "title: i18n.__('home.title'),\n    keywords: i18n.__('home.keywords'),\n    description: i18n.__('home.description'),\n    footer: i18n.__('footer.text'),",
+  "replaceI18nError": "title: i18n.__('error.title'),\n    keywords: i18n.__('error.keywords'),\n    description: i18n.__('error.description'),\n    footer: i18n.__('footer.text'),"
+}

@@ -1,0 +1,3 @@
+{
+  "replaceLayui": "<script src='BASE_URL/static/layui/layui.js?<%= time %>'></script>"
+}

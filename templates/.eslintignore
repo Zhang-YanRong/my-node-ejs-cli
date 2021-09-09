@@ -1,0 +1,12 @@
+node_modules/
+dist/
+src/**/*.ejs
+server.js
+README.md
+src/assets/css
+src/assets/icons
+src/assets/img
+src/components
+src/views
+
+

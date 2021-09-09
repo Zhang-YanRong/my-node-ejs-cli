@@ -1,0 +1,50 @@
+
+<div class="cnzz">
+  <input type="hidden" class="cnzzId" value="<%= cnzz.id %>">
+  <input type="hidden" class="cnzzType" value="<%= cnzz.type %>">
+  <script src="/assets/js/cnzz/page_cnzz.js?<%= time %>"></script>
+</div>
+
+<% if('zh' !== 'zh') { %>
+  <div class="google">
+    <% if('zh' === 'en') { %>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167993865-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-167993865-2');
+        gtag('config', 'AW-936728432');
+      </script>
+    
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MDVS2Z4');
+      </script>
+    <% } %>
+      <% if('zh' === 'kr') { %>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167993865-3"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'UA-167993865-3');
+      </script>
+  
+      <script>(function (w, d, s, l, i) {
+              w[l] = w[l] || []; w[l].push({
+                  'gtm.start':
+                      new Date().getTime(), event: 'gtm.js'
+              }); var f = d.getElementsByTagName(s)[0],
+                  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                      'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-TTRNQ9B');</script>
+  
+      <% } %>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= cnzz.googleId %>" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  </div>
+<% } %>

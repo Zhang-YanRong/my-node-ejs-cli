@@ -1,0 +1,3 @@
+{
+  "replaceHomeCNZZ": "<!-- cnzz -->\n     <%- include('../../components/cnzz.ejs') -%>"
+}

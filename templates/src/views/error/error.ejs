@@ -1,0 +1,21 @@
+  
+<!DOCTYPE html>
+<html>
+  <head>
+		<%- include("../../components/meta/index.ejs") -%>
+    <link rel="stylesheet" href="BASE_URL/assets/css/error/error.css?<%= time %>">
+  </head>
+  <body class="theme-default">
+    <div class="err-content v-h-center">
+      <p class="err-msg">404</p>
+      <span class="err-button-back">返回上一页</span>
+    </div>
+    
+    <!-- 公共js -->
+    <%- include("../../components/common.ejs") -%>
+    <script src="BASE_URL/assets/js/404/error.js?<%= time %>"></script>
+
+    <!-- {replaceHomeCNZZ} -->
+  </body>
+
+</html>

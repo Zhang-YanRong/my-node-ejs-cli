@@ -1,0 +1,7 @@
+{
+  "replaceI18n": "",
+  "replaceI18nHome": "title: '首页',\n    keywords: 'keywords',\n    description: 'description',\n    footer: 'Copyright © 1992-2021 苏州浩辰软件股份有限公司',",
+  "replaceI18nError": "title: '错误页面',\n    keywords: 'keywords',\n    description: 'description',\n    footer: 'Copyright © 1992-2021 苏州浩辰软件股份有限公司',",
+  "replaceCNZZ": "",
+  "replaceUseCnzz": ""
+}

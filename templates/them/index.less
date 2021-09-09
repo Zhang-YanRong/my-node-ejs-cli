@@ -1,0 +1,44 @@
+// 头部高
+@HeaderMaxHeight: 140px; 
+@HeaderMinHeight: 80px;
+
+// 菜单栏宽
+@AsideMaxWidht: 317px;
+@AsideMinWidht: 226px;
+
+// 除了头部的整个内容区域高
+@ContentMaxHeight: calc(100vh - @HeaderMaxHeight - 50px);
+@ContentMinHeight: calc(100vh - @HeaderMinHeight - 40px);
+
+.theme(default) {
+    @HeaderMaxHeight: 140px;
+    @HeaderMinHeight: 80px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 1024px;
+    position: relative;
+    // display: none;
+}
+
+@themName: default;
+
+@len: length(@themName);
+
+.defineTheme(@index: 1) when(@index <=@len) {
+    @name: extract(@themName, @index);
+
+    .theme-@{name} {
+        .theme(@name);
+
+        @import url(@path);
+    }
+
+    .defineTheme(@index + 1);
+}

@@ -1,0 +1,3 @@
+{
+  "replaceMetaLaui": "<link rel='stylesheet' href='BASE_URL/static/layui/css/layui.css?<%= time %>'>"
+}
