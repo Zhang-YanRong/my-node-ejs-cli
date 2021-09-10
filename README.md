@@ -7,10 +7,10 @@
   // 创建项目
   node-ejs create <projectName>
 
+  // 选择需要的配置
+
   // 进入项目
   cd <projectName>
-
-  // 选择需要的配置
 
   // 安装依赖
   yarn

@@ -1,6 +1,6 @@
 {
   "name": "my-node-ejs-cli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "bin": {
     "node-ejs": "./bin/cli.js"
@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["node-ejs", "cli", "node-cli", "node-ejs-cli"],
   "files": [
     "bin",
     "lib",
